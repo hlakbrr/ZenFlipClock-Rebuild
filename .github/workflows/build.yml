@@ -9,7 +9,9 @@ on:
 
 jobs:
   build:
-    runs-on: macos-14
+    # macos-14 标签在该账号上会被平台排队即取消（已实测三次），
+    # macos-15 实测可正常运行，故使用 macos-15
+    runs-on: macos-15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
