@@ -1,0 +1,15 @@
+# Xcode
+*.xcodeproj
+!project.yml
+xcuserdata/
+DerivedData/
+build/
+build.log
+Payload/
+*.ipa
+
+# macOS
+.DS_Store
+
+# Tools
+*.xcresult
