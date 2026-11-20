@@ -7,8 +7,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  probe:
+  probe-linux:
     runs-on: ubuntu-24.04
     steps:
       - name: Ping
         run: echo "ubuntu runner alive" && uname -a && date -u
+
+  probe-mac:
+    runs-on: macos-15
+    steps:
+      - name: Ping
+        run: echo "macos runner alive" && uname -a && date -u
